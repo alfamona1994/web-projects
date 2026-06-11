@@ -4,7 +4,7 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import BorderAllIcon from "@mui/icons-material/BorderAll";
 import SplitscreenIcon from "@mui/icons-material/Splitscreen";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { useContextApp } from "../contextApp";
+import { useContextApp } from "@/app/contextApp";
 import { SvgIconProps } from "@mui/material";
 import { useUser } from "@clerk/nextjs";  // ✅ Add this
 import Image from "next/image";           // ✅ Add this

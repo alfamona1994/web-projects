@@ -3,7 +3,7 @@ import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import AddIcon from "@mui/icons-material/Add";
 import MenuIcon from "@mui/icons-material/Menu"
-import { useContextApp } from "../../../contextApp";
+import { useContextApp } from "@/app/contextApp";
 
 function TasksHeader() {
     return (

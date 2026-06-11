@@ -15,7 +15,7 @@ export const allProjectsData: Project[] = [
     tasks: [
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task",
+        title: "Create the UI Design of the task",
         icon: "Title",
         projectName: "Project Title Title Title",
         status: "In Progress",
@@ -25,7 +25,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Develop the Backend API",
+        title: "Develop the Backend API",
         icon: "Title",
         projectName: "Project Title Title Title",
         status: "In Progress",
@@ -35,7 +35,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Write Unit Tests",
+        title: "Write Unit Tests",
         icon: "Title",
         projectName: "Project Title Title Title",
         status: "Completed",
@@ -56,7 +56,7 @@ export const allProjectsData: Project[] = [
     tasks: [
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task renewed",
+        title: "Create the UI Design of the task renewed",
         icon: "Title",
         projectName: "Project Title 2",
         status: "In Progress",
@@ -66,7 +66,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task the th",
+        title: "Create the UI Design of the task the th",
         icon: "Title",
         projectName: "Project Title 2",
         status: "In Progress",
@@ -76,7 +76,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task",
+        title: "Create the UI Design of the task",
         icon: "Title",
         projectName: "Project Title 2",
         status: "Completed",
@@ -86,7 +86,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Extra task for project 2",
+        title: "Extra task for project 2",
         icon: "Title",
         projectName: "Project Title 2",
         status: "In Progress",
@@ -107,7 +107,7 @@ export const allProjectsData: Project[] = [
     tasks: [
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task renewed",
+        title: "Create the UI Design of the task renewed",
         icon: "Title",
         projectName: "Project Title 3",
         status: "In Progress",
@@ -117,7 +117,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task the th",
+        title: "Create the UI Design of the task the th",
         icon: "Title",
         projectName: "Project Title 3",
         status: "In Progress",
@@ -127,7 +127,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Create the UI Design of the task",
+        title: "Create the UI Design of the task",
         icon: "Title",
         projectName: "Project Title 3",
         status: "Completed",
@@ -137,7 +137,7 @@ export const allProjectsData: Project[] = [
       },
       {
         id: uuidv4(),
-        name: "Extra task for project 3",
+        title: "Extra task for project 3",
         icon: "Title",
         projectName: "Project Title 3",
         status: "In Progress",

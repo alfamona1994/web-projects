@@ -80,7 +80,7 @@ import { AccountBalance,
     Expand,
     Explore,
     Face } from "@mui/icons-material";
-import { useContextApp } from "../contextApp";
+import { useContextApp } from "@/app/contextApp";
 
 export const allIconArray: IconData[] = [
 {
