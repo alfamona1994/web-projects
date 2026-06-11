@@ -1,3 +1,4 @@
+"use client";
 import { IconData } from "@/app/Pages/types/AppType";
 import React, { useState } from "react";
 import { AccountBalance, 

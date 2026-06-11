@@ -1,42 +1,152 @@
-import { Title } from "@mui/icons-material";
 import { v4 as uuidv4 } from "uuid";
+import { Project } from "../Pages/types/AppType";
 
+export const projectData: Project[] = [];
 
-//Define the structure of a task
-export type Task = {
-    id: string;
-    title: string;
-    icon: string;
-    projectName: string;
-    status: "To Do" | "In Progress" | "Completed";
-    priority: "Low" | "Medium" | "High";
-    createdAt: string;
-    updatedAt: string;
-};
-
-// Define the structure of a project
-export type Project = {
-    id: string;
-    clerkUserId: string;
-    title: string;
-    description: string;
-    createdAt: string;
-    updatedAt: string;
-    tasks: Task[];
-};
-
-// Sample data for projects and tasks
 export const allProjectsData: Project[] = [
-    {
+  {
+    id: uuidv4(),
+    title: "Project Title Title Title",
+    description: "First demo project",
+    clerkUserId: "user-123",
+    createdAt: "2026-01-15T10:00:00Z",
+    updatedAt: "2026-01-20T12:00:00Z",
+    icon: "LocalLibrary",
+    tasks: [
+      {
         id: uuidv4(),
-        clerkUserId: "user-123",
-        title: "Website Redesign",
-        description: "Redesign the corporate website for better UX.",
+        name: "Create the UI Design of the task",
+        icon: "Title",
+        projectName: "Project Title Title Title",
+        status: "In Progress",
+        priority: "Medium",
         createdAt: "2026-01-15T10:00:00Z",
-        updatedAt: "2026-01-20T12:00:00Z",
-        icon: "LocalLibrary",
-        tasks: [
-            {
-                id: uuidv4();
-                Title:
-                 
+        updatedAt: "2026-01-15T10:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Develop the Backend API",
+        icon: "Title",
+        projectName: "Project Title Title Title",
+        status: "In Progress",
+        priority: "High",
+        createdAt: "2026-01-16T11:00:00Z",
+        updatedAt: "2026-01-18T14:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Write Unit Tests",
+        icon: "Title",
+        projectName: "Project Title Title Title",
+        status: "Completed",
+        priority: "Low",
+        createdAt: "2026-01-17T09:00:00Z",
+        updatedAt: "2026-01-19T16:00:00Z",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: "Project Title 2",
+    description: "Second demo project",
+    clerkUserId: "user-123",
+    createdAt: "2026-01-17T10:00:00Z",
+    updatedAt: "2026-01-20T12:00:00Z",
+    icon: "LocalLibrary",
+    tasks: [
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task renewed",
+        icon: "Title",
+        projectName: "Project Title 2",
+        status: "In Progress",
+        priority: "Medium",
+        createdAt: "2026-01-15T10:00:00Z",
+        updatedAt: "2026-01-15T10:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task the th",
+        icon: "Title",
+        projectName: "Project Title 2",
+        status: "In Progress",
+        priority: "High",
+        createdAt: "2026-01-16T11:00:00Z",
+        updatedAt: "2026-01-18T14:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task",
+        icon: "Title",
+        projectName: "Project Title 2",
+        status: "Completed",
+        priority: "Low",
+        createdAt: "2026-01-17T09:00:00Z",
+        updatedAt: "2026-01-19T16:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Extra task for project 2",
+        icon: "Title",
+        projectName: "Project Title 2",
+        status: "In Progress",
+        priority: "High",
+        createdAt: "2026-01-17T09:00:00Z",
+        updatedAt: "2026-01-19T16:00:00Z",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    title: "Project Title 3",
+    description: "Third demo project",
+    clerkUserId: "user-123",
+    createdAt: "2026-01-18T10:00:00Z",
+    updatedAt: "2026-01-20T12:00:00Z",
+    icon: "LocalLibrary",
+    tasks: [
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task renewed",
+        icon: "Title",
+        projectName: "Project Title 3",
+        status: "In Progress",
+        priority: "Medium",
+        createdAt: "2026-01-15T10:00:00Z",
+        updatedAt: "2026-01-15T10:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task the th",
+        icon: "Title",
+        projectName: "Project Title 3",
+        status: "In Progress",
+        priority: "High",
+        createdAt: "2026-01-16T11:00:00Z",
+        updatedAt: "2026-01-18T14:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Create the UI Design of the task",
+        icon: "Title",
+        projectName: "Project Title 3",
+        status: "Completed",
+        priority: "Low",
+        createdAt: "2026-01-17T09:00:00Z",
+        updatedAt: "2026-01-19T16:00:00Z",
+      },
+      {
+        id: uuidv4(),
+        name: "Extra task for project 3",
+        icon: "Title",
+        projectName: "Project Title 3",
+        status: "In Progress",
+        priority: "High",
+        createdAt: "2026-01-17T09:00:00Z",
+        updatedAt: "2026-01-19T16:00:00Z",
+      },
+    ],
+  },
+];
+
+export type { Project };

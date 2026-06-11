@@ -1,10 +1,15 @@
+"use client";
+
+import React from "react";
 import AllProjectsSection from "./Components/AllProjectsSection";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSubHeader from "./Components/ProjectsSubHeader";
 import StatsRightSideBar from "./Components/StatsRightSideBar";
+import SortingDropDown from "@/app/Components/DropDowns/SortingDropDown"; // ✅ add this import
+
 function AllProjects() {
     return (
-        <div className=" bg-slate-50 w-full min-h-screen flex">
+        <div className="bg-slate-50 w-full flex-grow overflow-auto flex">
             <AllProjectsArea />
             <StatsRightSideBar />
         </div>
@@ -13,11 +18,9 @@ function AllProjects() {
     function AllProjectsArea() {
         return (
             <div className="w-[78%] p-10 flex flex-col gap-3">
-                {/* Search bar and the add project button */}
                 <ProjectsHeader />
-                {/* My Projects Title and the add button */}
                 <ProjectsSubHeader />
-                { /* All Projects Added */}
+                <SortingDropDown /> {/* ✅ add this */}
                 <AllProjectsSection />
             </div>
         )
